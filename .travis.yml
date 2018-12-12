@@ -4,9 +4,9 @@ services:
     - docker
     
 script:
-#    - make docker-login
+    - make docker-login
     - make 
-#    - make TAG=${TRAVIS_BUILD_NUMBER} tag
-#    - make TAG=${TRAVIS_BUILD_NUMBER} push-tag
-#    - make push-latest
+    - make TAG=${TRAVIS_BUILD_NUMBER} tag
+    - make TAG=${TRAVIS_BUILD_NUMBER} push-tag
+    - make push-latest
 
